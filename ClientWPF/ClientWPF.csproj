@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resourses\Background\**" />
+    <EmbeddedResource Remove="Resourses\Background\**" />
+    <None Remove="Resourses\Background\**" />
+    <Page Remove="Resourses\Background\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resourses\Backgrounds\background.jpg" />
+    <None Remove="Resourses\Backgrounds\Second_bg.jpg" />
+    <None Remove="Resourses\Icons\icon.png" />
+    <None Remove="Resourses\Icons\password.png" />
+    <None Remove="Resourses\Icons\user.png" />
+    <None Remove="Resourses\Images\Icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resourses\Backgrounds\background.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resourses\Backgrounds\Second_bg.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resourses\Icons\icon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resourses\Icons\password.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resourses\Icons\user.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resourses\Images\Icon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
