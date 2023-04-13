@@ -20,27 +20,39 @@ namespace ClientWPF.Pages
     /// </summary>
     public partial class LoginWindow : Window
     {
-        int it = 0;
         public LoginWindow()
         {
             InitializeComponent();
         }
-
-        private void Registr_btn_Click(object sender, RoutedEventArgs e)
+        private void Username_txb_LostFocus(object sender, RoutedEventArgs e)
         {
-            RegisterWindow registr = new RegisterWindow();
-            registr.Owner = this;
-            this.Visibility = Visibility.Hidden;
-            registr.ShowDialog();
-            this.Close();
+            if (Username_txb.Text == "" || Username_txb.Text == "Логін")
+            {
+                Username_txb.Text = "Логін";
+            }
         }
 
-        private void Username_txb_GotMouseCapture(object sender, MouseEventArgs e)
+        private void Username_txb_GotFocus(object sender, RoutedEventArgs e)
         {
-            if (it == 0)
+            if (Username_txb.Text == "" || Username_txb.Text == "Логін")
             {
-                Username_txb.Text = "";
-                it++;
+                 Username_txb.Text = "";
+            }
+        }
+
+        private void PasswordBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (Password_pb.Password == "password")
+            {
+                Password_pb.Password = "";
+            }
+        }
+
+        private void PasswordBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (Password_pb.Password == "" || Password_pb.Password == "password")
+            {
+                Password_pb.Password = "password";
             }
         }
     }

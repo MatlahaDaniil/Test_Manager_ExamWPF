@@ -12,6 +12,14 @@
         WindowStyle="None" ResizeMode="NoResize"
         Icon="/Resourses/Icons/icon.png">
 
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
@@ -24,8 +32,6 @@
                     <LinearGradientBrush>
                         <GradientStop Color="#f083da" Offset="0.1"/>
                         <GradientStop Color="#7be9f6" Offset="1"/>
-                        <!--<GradientStop Color="#1b1c1b" Offset="1"/>
-                        <GradientStop Color="#1b1c1b" Offset="0.1"/>-->
                     </LinearGradientBrush>
                 </Border.Background>
             </Border>
@@ -40,12 +46,13 @@
             <StackPanel Grid.Row="1">
                 <StackPanel Orientation="Horizontal">
                     <TextBox x:Name="Username_txb" FontWeight="Light" 
-                         Text="Username" FontSize="20"
+                         Text="Логін" FontSize="20"
                          HorizontalAlignment="Center" Background="Transparent"
                          HorizontalContentAlignment="Left"
                          BorderThickness="0" Foreground="White" Width="235"
-                         Opacity="0.5" Height="25" Margin="62,0,0,0"
-                         GotMouseCapture="Username_txb_GotMouseCapture"/>
+                         Opacity="0.5" Height="25" Margin="62,0,0,0"                        
+                         LostFocus="Username_txb_LostFocus"
+                         GotFocus ="Username_txb_GotFocus"/>
 
                     <Image Source="/Resourses/Icons/user.png" Width="20" 
                        HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -53,20 +60,31 @@
                 <Border Width="255" Height="2" Background="White" Opacity="0.5" />
 
                 <StackPanel Orientation="Horizontal" Margin="0,30,0,0">
-                    <PasswordBox FontWeight="Light" FontSize="20"
+                    <PasswordBox x:Name="Password_pb" FontWeight="Light" FontSize="20"
                          HorizontalAlignment="Center" Background="Transparent"
-                         HorizontalContentAlignment="Left" BorderThickness="0" Foreground="White" Width="235"
-                         Opacity="0.5" Height="25" Margin="62,0,0,0"/>
+                         HorizontalContentAlignment="Left" 
+                         BorderThickness="0" Foreground="White" Width="235"
+                         Password ="password"
+                         Opacity="0.5" Height="25" Margin="62,0,0,0"
+                         LostFocus="PasswordBox_LostFocus"
+                         GotFocus="PasswordBox_GotFocus"/>
 
                     <Image Source="/Resourses/Icons/password.png" Width="20" 
                        HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </StackPanel>
                 <Border Width="255" Height="2" Background="White" Opacity="0.5" />
+
+
+                <StackPanel Orientation="Horizontal" Margin="0,50,0,0">
+                    <Button Width="100" Height="40" Content="УВІЙТИ"
+                            Margin="60,0,60,0" 
+                            Style="{StaticResource btn_ForStyleTestManager}"/>
+
+                    <Button Width="100" Height="40" Content="РЕЄСТРАЦІЯ"
+                            Style="{StaticResource btn_ForStyleTestManager}"/>
+                </StackPanel>
             </StackPanel>
-
-
-            
-
-        </Grid>
+        </Grid>  
+        
     </Grid>
 </Window>

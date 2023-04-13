@@ -45,5 +45,6 @@ namespace ClientWPF
             login.ShowDialog();
             this.Close();
         }
+
     }
 }
