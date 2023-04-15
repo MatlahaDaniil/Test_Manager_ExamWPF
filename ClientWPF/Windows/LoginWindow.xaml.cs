@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClientWPF.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,11 @@ namespace ClientWPF.Pages
     /// </summary>
     public partial class LoginWindow : Window
     {
-        public LoginWindow()
+        string User;
+        public LoginWindow(string user)
         {
             InitializeComponent();
+            this.User = user;
         }
         private void Username_txb_LostFocus(object sender, RoutedEventArgs e)
         {
@@ -54,6 +57,21 @@ namespace ClientWPF.Pages
             {
                 Password_pb.Password = "password";
             }
+        }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e) => DragMove();
+
+        private void LogIn_btn_Click(object sender, RoutedEventArgs e)
+        {      
+            this.Visibility = Visibility.Hidden;
+            TeacherAccWindow teacher = new TeacherAccWindow();
+            teacher.ShowDialog();
+            this.Close();
+        }
+
+        private void Register_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

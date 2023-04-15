@@ -8,38 +8,90 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Resourses\Background\**" />
-    <EmbeddedResource Remove="Resourses\Background\**" />
-    <None Remove="Resourses\Background\**" />
-    <Page Remove="Resourses\Background\**" />
+    <Compile Remove="Resources\Background\**" />
+    <EmbeddedResource Remove="Resources\Background\**" />
+    <None Remove="Resources\Background\**" />
+    <Page Remove="Resources\Background\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Resourses\Backgrounds\background.jpg" />
-    <None Remove="Resourses\Backgrounds\Second_bg.jpg" />
-    <None Remove="Resourses\Icons\icon.png" />
-    <None Remove="Resourses\Icons\password.png" />
-    <None Remove="Resourses\Icons\user.png" />
-    <None Remove="Resourses\Images\Icon.png" />
+    <None Remove="Resources\Backgrounds\background.jpg" />
+    <None Remove="Resources\Backgrounds\Second_bg.jpg" />
+    <None Remove="Resources\Icons\add.png" />
+    <None Remove="Resources\Icons\arrow.png" />
+    <None Remove="Resources\Icons\close.png" />
+    <None Remove="Resources\Icons\delete.png" />
+    <None Remove="Resources\Icons\edit.png" />
+    <None Remove="Resources\Icons\expandWindow.png" />
+    <None Remove="Resources\Icons\icon.png" />
+    <None Remove="Resources\Icons\list.png" />
+    <None Remove="Resources\Icons\minus.png" />
+    <None Remove="Resources\Icons\password.png" />
+    <None Remove="Resources\Icons\pencil.png" />
+    <None Remove="Resources\Icons\profileUser.png" />
+    <None Remove="Resources\Icons\statistics.png" />
+    <None Remove="Resources\Icons\students.png" />
+    <None Remove="Resources\Icons\test.png" />
+    <None Remove="Resources\Icons\user.png" />
+    <None Remove="Resources\Icons\userForButton.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Resourses\Backgrounds\background.jpg">
+    <Resource Include="Resources\Backgrounds\background.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resourses\Backgrounds\Second_bg.jpg">
+    <Resource Include="Resources\Backgrounds\Second_bg.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resourses\Icons\icon.png">
+    <Resource Include="Resources\Icons\add.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resourses\Icons\password.png">
+    <Resource Include="Resources\Icons\arrow.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resourses\Icons\user.png">
+    <Resource Include="Resources\Icons\close.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resourses\Images\Icon.png">
+    <Resource Include="Resources\Icons\delete.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icons\edit.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icons\expandWindow.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icons\icon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icons\list.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icons\minus.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icons\password.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icons\pencil.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icons\profileUser.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icons\statistics.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icons\students.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icons\test.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icons\user.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icons\userForButton.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

@@ -7,13 +7,13 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Pages for Registr\AccPage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Pages for Registr\RegisterPage.xaml.cs">
+    <Compile Update="PagesForTeacher\ProfilePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Windows\LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\TeacherAccWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -21,16 +21,16 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Pages for Registr\AccPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Pages for Registr\RegisterPage.xaml">
+    <Page Update="PagesForTeacher\ProfilePage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\Styles.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\TeacherAccWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

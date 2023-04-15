@@ -19,10 +19,10 @@ C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Clie
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\ref\ClientWPF.dll
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\MainWindow.g.cs
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\MainWindow.baml
-C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Pages for Registr\RegisterPage.g.cs
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Windows\LoginWindow.g.cs
-C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Pages for Registr\RegisterPage.baml
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Windows\LoginWindow.baml
-C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Pages for Registr\AccPage.g.cs
-C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Pages for Registr\AccPage.baml
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Styles\Styles.baml
+C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Windows\TeacherAccWindow.g.cs
+C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Windows\TeacherAccWindow.baml
+C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\PagesForTeacher\ProfilePage.g.cs
+C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\PagesForTeacher\ProfilePage.baml

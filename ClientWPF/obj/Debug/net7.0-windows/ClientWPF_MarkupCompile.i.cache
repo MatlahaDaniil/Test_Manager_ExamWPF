@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\App.xaml
-5-557454591
+5-92527474
 
-81930133641
+8-204679316
 198-1736014856
-MainWindow.xaml;Pages for Registr\AccPage.xaml;Pages for Registr\RegisterPage.xaml;Styles\Styles.xaml;Windows\LoginWindow.xaml;
+MainWindow.xaml;PagesForTeacher\ProfilePage.xaml;Styles\Styles.xaml;Windows\LoginWindow.xaml;Windows\TeacherAccWindow.xaml;
 
 True
 

@@ -8,9 +8,12 @@
         Title="Авторизація" MinHeight="450" MinWidth="380"  
         MaxHeight="450" MaxWidth="380"
         WindowStartupLocation="CenterOwner"
-        AllowsTransparency="True" Background="#1b1c1b"
-        WindowStyle="None" ResizeMode="NoResize"
-        Icon="/Resourses/Icons/icon.png">
+        AllowsTransparency="True"
+        WindowStyle="None"
+        Background="Transparent"
+        ResizeMode="NoResize"
+        Icon="/Resources/Icons/icon.png"
+        MouseDown="Window_MouseDown">
 
     <Window.Resources>
         <ResourceDictionary>
@@ -27,17 +30,17 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <Border CornerRadius="10" Grid.RowSpan="2">
-                <Border.Background>
+            <Border CornerRadius="20" Grid.RowSpan="2" Background="#36393F">
+                <!--<Border.Background>
                     <LinearGradientBrush>
                         <GradientStop Color="#f083da" Offset="0.1"/>
                         <GradientStop Color="#7be9f6" Offset="1"/>
                     </LinearGradientBrush>
-                </Border.Background>
+                </Border.Background>-->
             </Border>
 
             <StackPanel VerticalAlignment="Center">
-                <Image Source="/Resourses/Icons/icon.png" Width="80"/>
+                <Image Source="/Resources/Icons/icon.png" Width="80"/>
                 <TextBlock Text="Test Manager" FontWeight="Light"
                            FontSize="22" Foreground="White"
                            HorizontalAlignment="Center"/>
@@ -76,15 +79,20 @@
 
 
                 <StackPanel Orientation="Horizontal" Margin="0,50,0,0">
-                    <Button Width="100" Height="40" Content="УВІЙТИ"
-                            Margin="60,0,60,0" 
+                    <Button x:Name="LogIn_btn" Width="100"
+                            Height="40" Content="УВІЙТИ"
+                            FontWeight="Bold"
+                            Margin="60,0,60,0"
+                            Click="LogIn_btn_Click"
                             Style="{StaticResource btn_ForStyleTestManager}"/>
 
-                    <Button Width="100" Height="40" Content="РЕЄСТРАЦІЯ"
+                    <Button x:Name="Register" Width="100" 
+                            Height="40" Content="РЕЄСТРАЦІЯ"
+                            FontWeight="Bold"
+                            Click="Register_Click"
                             Style="{StaticResource btn_ForStyleTestManager}"/>
                 </StackPanel>
             </StackPanel>
         </Grid>  
-        
     </Grid>
 </Window>
