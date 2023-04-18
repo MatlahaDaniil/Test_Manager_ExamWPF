@@ -20,6 +20,8 @@
     <None Remove="Resources\Icons\add.png" />
     <None Remove="Resources\Icons\arrow.png" />
     <None Remove="Resources\Icons\close.png" />
+    <None Remove="Resources\Icons\DarkIconAdd.png" />
+    <None Remove="Resources\Icons\DarkIconUser.png" />
     <None Remove="Resources\Icons\delete.png" />
     <None Remove="Resources\Icons\edit.png" />
     <None Remove="Resources\Icons\expandWindow.png" />
@@ -28,12 +30,17 @@
     <None Remove="Resources\Icons\minus.png" />
     <None Remove="Resources\Icons\password.png" />
     <None Remove="Resources\Icons\pencil.png" />
+    <None Remove="Resources\Icons\power.png" />
     <None Remove="Resources\Icons\profileUser.png" />
     <None Remove="Resources\Icons\statistics.png" />
     <None Remove="Resources\Icons\students.png" />
     <None Remove="Resources\Icons\test.png" />
     <None Remove="Resources\Icons\user.png" />
     <None Remove="Resources\Icons\userForButton.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -50,6 +57,12 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Icons\close.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icons\DarkIconAdd.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icons\DarkIconUser.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Icons\delete.png">
@@ -74,6 +87,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Icons\pencil.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icons\power.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Icons\profileUser.png">

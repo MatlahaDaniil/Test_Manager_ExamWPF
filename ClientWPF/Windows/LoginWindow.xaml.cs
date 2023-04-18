@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,10 +23,13 @@ namespace ClientWPF.Pages
     public partial class LoginWindow : Window
     {
         string User;
+        Server server;
         public LoginWindow(string user)
         {
             InitializeComponent();
             this.User = user;
+            server = new Server(this);  
+            server.Connect();
         }
         private void Username_txb_LostFocus(object sender, RoutedEventArgs e)
         {
@@ -63,15 +67,19 @@ namespace ClientWPF.Pages
 
         private void LogIn_btn_Click(object sender, RoutedEventArgs e)
         {      
-            this.Visibility = Visibility.Hidden;
-            TeacherAccWindow teacher = new TeacherAccWindow();
-            teacher.ShowDialog();
-            this.Close();
+            //this.Visibility = Visibility.Hidden;
+            //TeacherAccWindow teacher = new TeacherAccWindow();
+            //teacher.ShowDialog();
+            //this.Close();
+
+            server.SendMessage($"Authentication: {User} {Username_txb.Text} {Password_pb.Password}");
+
         }
 
         private void Register_Click(object sender, RoutedEventArgs e)
         {
-
+            server.SendMessage($"reg: {User} {Username_txb.Text} {Password_pb.Password}");         
         }
+
     }
 }

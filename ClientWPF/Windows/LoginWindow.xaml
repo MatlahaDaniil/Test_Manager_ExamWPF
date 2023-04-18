@@ -30,14 +30,7 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <Border CornerRadius="20" Grid.RowSpan="2" Background="#36393F">
-                <!--<Border.Background>
-                    <LinearGradientBrush>
-                        <GradientStop Color="#f083da" Offset="0.1"/>
-                        <GradientStop Color="#7be9f6" Offset="1"/>
-                    </LinearGradientBrush>
-                </Border.Background>-->
-            </Border>
+            <Border CornerRadius="20" Grid.RowSpan="2" Background="#36393F"/>
 
             <StackPanel VerticalAlignment="Center">
                 <Image Source="/Resources/Icons/icon.png" Width="80"/>

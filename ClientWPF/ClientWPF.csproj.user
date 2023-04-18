@@ -7,13 +7,34 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="PagesForTeacher\ProfilePage.xaml.cs">
+    <Compile Update="Teacher\Pages\CreateTestPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Teacher\Pages\DeleteTestPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Teacher\Pages\EditProfilePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Teacher\Pages\EditTestPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Teacher\Pages\ListStudentsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Teacher\Pages\ProfilePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Teacher\Pages\StatisticStudentPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\ErrorWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Windows\LoginWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Windows\TeacherAccWindow.xaml.cs">
+    <Compile Update="Teacher\TeacherAccWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -21,16 +42,37 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="PagesForTeacher\ProfilePage.xaml">
+    <Page Update="Teacher\Pages\CreateTestPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Teacher\Pages\DeleteTestPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Teacher\Pages\EditProfilePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Teacher\Pages\EditTestPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Teacher\Pages\ListStudentsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Teacher\Pages\ProfilePage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\Styles.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Teacher\Pages\StatisticStudentPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\ErrorWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Windows\LoginWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Windows\TeacherAccWindow.xaml">
+    <Page Update="Teacher\TeacherAccWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

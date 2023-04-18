@@ -1,7 +1,14 @@
-﻿
+﻿C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
 
 FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\MainWindow.xaml;;
-FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\PagesForTeacher\ProfilePage.xaml;;
+FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\Pages\CreateTestPage.xaml;;
+FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\Pages\DeleteTestPage.xaml;;
+FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\Pages\EditProfilePage.xaml;;
+FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\Pages\EditTestPage.xaml;;
+FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\Pages\ListStudentsPage.xaml;;
+FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\Pages\ProfilePage.xaml;;
+FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\Pages\StatisticStudentPage.xaml;;
+FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\TeacherAccWindow.xaml;;
+FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Windows\ErrorWindow.xaml;;
 FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Windows\LoginWindow.xaml;;
-FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Windows\TeacherAccWindow.xaml;;
 

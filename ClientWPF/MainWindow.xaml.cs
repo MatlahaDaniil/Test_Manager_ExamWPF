@@ -31,7 +31,7 @@ namespace ClientWPF
         private void Teacher_btn_Click(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            LoginWindow login = new LoginWindow("Student");
+            LoginWindow login = new LoginWindow("Teacher");
             login.Owner = this;
             login.ShowDialog();
             this.Close();
@@ -40,7 +40,7 @@ namespace ClientWPF
         private void Student_btn_Click(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            LoginWindow login = new LoginWindow("Teacher");
+            LoginWindow login = new LoginWindow("Student");
             login.Owner = this;
             login.ShowDialog();
             this.Close();
