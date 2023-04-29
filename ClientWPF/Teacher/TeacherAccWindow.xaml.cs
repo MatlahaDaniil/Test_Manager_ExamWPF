@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ClientWPF.Windows
 {
@@ -22,9 +23,26 @@ namespace ClientWPF.Windows
     public partial class TeacherAccWindow : Window
     {
         ProfilePage profile;
-        public TeacherAccWindow()
+        public TeacherAccWindow(BitmapImage image = null)
         {
             InitializeComponent();
+
+            if(image!= null)
+            {
+                ImageBrush imageBrush = new ImageBrush(image);
+                AccPhoto_elips.Fill = imageBrush;
+            }
+
+            InfoContainer.UpdateProfile += InfoContainer_UpdateProfile;
+        }
+
+        private void InfoContainer_UpdateProfile(string message)
+        {
+            if (InfoContainer.ProfileIcon_Current_User != null)
+            {
+                ImageBrush imageBrush = new ImageBrush(InfoContainer.ProfileIcon_Current_User);
+                AccPhoto_elips.Fill = imageBrush;
+            }
         }
 
         private void Acc_btn_Click(object sender, RoutedEventArgs e)

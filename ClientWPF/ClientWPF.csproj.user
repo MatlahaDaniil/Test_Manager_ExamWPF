@@ -31,7 +31,10 @@
     <Compile Update="Windows\ErrorWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Windows\LoginWindow.xaml.cs">
+    <Compile Update="Windows\InfoWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\LoginAndRegisterWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Teacher\TeacherAccWindow.xaml.cs">
@@ -69,7 +72,10 @@
     <Page Update="Windows\ErrorWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Windows\LoginWindow.xaml">
+    <Page Update="Windows\InfoWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\LoginAndRegisterWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Teacher\TeacherAccWindow.xaml">

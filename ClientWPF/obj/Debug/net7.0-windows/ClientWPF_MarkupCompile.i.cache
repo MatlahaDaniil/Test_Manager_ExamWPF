@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\App.xaml
-12-1327995872
+13799639543
 
-18372762171
+202108320376
 203-1555069249
-MainWindow.xaml;Styles\Styles.xaml;Teacher\Pages\CreateTestPage.xaml;Teacher\Pages\DeleteTestPage.xaml;Teacher\Pages\EditProfilePage.xaml;Teacher\Pages\EditTestPage.xaml;Teacher\Pages\ListStudentsPage.xaml;Teacher\Pages\ProfilePage.xaml;Teacher\Pages\StatisticStudentPage.xaml;Teacher\TeacherAccWindow.xaml;Windows\ErrorWindow.xaml;Windows\LoginWindow.xaml;
+MainWindow.xaml;Styles\Styles.xaml;Teacher\Pages\CreateTestPage.xaml;Teacher\Pages\DeleteTestPage.xaml;Teacher\Pages\EditProfilePage.xaml;Teacher\Pages\EditTestPage.xaml;Teacher\Pages\ListStudentsPage.xaml;Teacher\Pages\ProfilePage.xaml;Teacher\Pages\StatisticStudentPage.xaml;Teacher\TeacherAccWindow.xaml;Windows\ErrorWindow.xaml;Windows\InfoWindow.xaml;Windows\LoginAndRegisterWindow.xaml;
 
-False
+True
 

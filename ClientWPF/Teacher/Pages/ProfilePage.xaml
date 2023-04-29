@@ -59,24 +59,28 @@
                            Style="{StaticResource Names_txb}"/>
 
                 <TextBlock Text="Не вказано"
+                           x:Name="Fullname_txb"
                            Style="{StaticResource Info_txb}"/>
 
                 <TextBlock Text="Пошта"
                            Style="{StaticResource Names_txb}"/>
 
                 <TextBlock Text="Не вказано"
+                           x:Name="Email_txb"
                            Style="{StaticResource Info_txb}"/>
 
                 <TextBlock Text="Номер телефону"
                            Style="{StaticResource Names_txb}"/>
 
                 <TextBlock Text="Не вказано"
+                           x:Name="NumPhone_txb"
                            Style="{StaticResource Info_txb}"/>
 
                 <TextBlock Text="Номер школи"
                            Style="{StaticResource Names_txb}"/>
 
                 <TextBlock Text="Не вказано"
+                           x:Name="NumSchool_txb"
                            Style="{StaticResource Info_txb}"/>
 
             </UniformGrid>

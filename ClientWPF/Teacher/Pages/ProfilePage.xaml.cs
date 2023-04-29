@@ -23,6 +23,40 @@ namespace ClientWPF.PagesFromTeacher
         public ProfilePage()
         {
             InitializeComponent();
+
+            if (InfoContainer.Fullname_Current_User != null)
+            { 
+                Fullname_txb.Text = InfoContainer.Fullname_Current_User;
+                Email_txb.Text = InfoContainer.Email_Current_User;
+                NumPhone_txb.Text = InfoContainer.PhoneNum_Current_User;
+                NumSchool_txb.Text = InfoContainer.Schoolnum_Current_User;
+            }
+            if(InfoContainer.ProfileIcon_Current_User != null) 
+            {
+                ImageBrush brush = new ImageBrush(InfoContainer.ProfileIcon_Current_User);
+                AccPhoto_elips.Fill = brush;
+            }
+
+            InfoContainer.UpdateProfile += InfoContainer_UpdateProfile;
+        }
+
+        private void InfoContainer_UpdateProfile(string message)
+        {
+            if (message == "update")
+            {
+                if (InfoContainer.Fullname_Current_User != null)
+                {
+                    Fullname_txb.Text = InfoContainer.Fullname_Current_User;
+                    Email_txb.Text = InfoContainer.Email_Current_User;
+                    NumPhone_txb.Text = InfoContainer.PhoneNum_Current_User;
+                    NumSchool_txb.Text = InfoContainer.Schoolnum_Current_User;
+                }
+                if (InfoContainer.ProfileIcon_Current_User != null)
+                {
+                    ImageBrush brush = new ImageBrush(InfoContainer.ProfileIcon_Current_User);
+                    AccPhoto_elips.Fill = brush;
+                }
+            }
         }
     }
 }

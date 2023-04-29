@@ -23,6 +23,7 @@ namespace ClientWPF.Windows
         {
             InitializeComponent();
             ExMessage_txb.Text = ErrorMessage;
+            ExMessage_txb.IsEnabled = false;
         }
 
         private void OkButton_Click(object sender, RoutedEventArgs e)

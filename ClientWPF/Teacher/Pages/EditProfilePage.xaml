@@ -131,7 +131,8 @@
                 <Button Content="Зберігти"
                         Foreground="Black"
                         Background="Transparent"
-                        BorderThickness="0">
+                        BorderThickness="0"
+                        Click="EditButton_Click">
 
                     <Button.Template>
                         <ControlTemplate TargetType="Button">

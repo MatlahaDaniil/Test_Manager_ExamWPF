@@ -17,8 +17,6 @@ C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\refi
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\ClientWPF.pdb
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\ClientWPF.genruntimeconfig.cache
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\ref\ClientWPF.dll
-C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Windows\LoginWindow.g.cs
-C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Windows\LoginWindow.baml
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Styles\Styles.baml
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Teacher\Pages\EditProfilePage.g.cs
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Teacher\Pages\ProfilePage.g.cs
@@ -58,3 +56,7 @@ C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Teac
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\ClientWPF.csproj.CopyComplete
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Windows\ErrorWindow.g.cs
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Windows\ErrorWindow.baml
+C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Windows\LoginAndRegisterWindow.g.cs
+C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Windows\LoginAndRegisterWindow.baml
+C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Windows\InfoWindow.g.cs
+C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Windows\InfoWindow.baml
