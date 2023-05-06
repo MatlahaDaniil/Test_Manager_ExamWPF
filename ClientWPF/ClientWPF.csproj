@@ -25,6 +25,7 @@
     <None Remove="Resources\Icons\delete.png" />
     <None Remove="Resources\Icons\edit.png" />
     <None Remove="Resources\Icons\expandWindow.png" />
+    <None Remove="Resources\Icons\history.png" />
     <None Remove="Resources\Icons\icon.png" />
     <None Remove="Resources\Icons\list.png" />
     <None Remove="Resources\Icons\minus.png" />
@@ -37,6 +38,12 @@
     <None Remove="Resources\Icons\test.png" />
     <None Remove="Resources\Icons\user.png" />
     <None Remove="Resources\Icons\userForButton.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Icons\history.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
@@ -110,6 +117,11 @@
     <Resource Include="Resources\Icons\userForButton.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Student\ViewModel\" />
+    <Folder Include="Student\Pages\" />
   </ItemGroup>
 
 </Project>

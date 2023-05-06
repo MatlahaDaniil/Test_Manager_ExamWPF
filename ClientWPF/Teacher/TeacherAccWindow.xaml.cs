@@ -50,7 +50,11 @@ namespace ClientWPF.Windows
             //Frame.Content = profile;
         }
 
-        private void MoveWindow_MouseDown(object sender, MouseButtonEventArgs e) => DragMove();
+        private void MoveWindow_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+                DragMove();
+        }
 
         private void Close_btn_Click(object sender, RoutedEventArgs e)
         {

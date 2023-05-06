@@ -62,7 +62,11 @@ namespace ClientWPF.Pages
             }
         }
 
-        private void Window_MouseDown(object sender, MouseButtonEventArgs e) => DragMove();
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+                DragMove();
+        }
 
 
         private void LogIn_btn_Click(object sender, RoutedEventArgs e)
@@ -94,9 +98,6 @@ namespace ClientWPF.Pages
 
                 InfoContainer.Login_Current_User = Username_txb.Text;
                 InfoContainer.Password_Current_User = Password_pb.Password;
-
-
-                InfoContainer.server.SendMessage($"info:|{User}|{InfoContainer.Login_Current_User}");
 
                 InfoContainer.server.SendMessage($"reg: {User} {Username_txb.Text} {Password_pb.Password}");
             }

@@ -60,3 +60,5 @@ C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Wind
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Windows\LoginAndRegisterWindow.baml
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Windows\InfoWindow.g.cs
 C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Windows\InfoWindow.baml
+C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Student\StudentWindow.g.cs
+C:\Users\Admin\source\repos\Test_Manager\ClientWPF\obj\Debug\net7.0-windows\Student\StudentWindow.baml

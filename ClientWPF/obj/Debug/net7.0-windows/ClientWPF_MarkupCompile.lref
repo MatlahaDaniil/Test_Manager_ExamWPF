@@ -1,6 +1,7 @@
 ﻿
 
 FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\MainWindow.xaml;;
+FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Student\StudentWindow.xaml;;
 FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\Pages\CreateTestPage.xaml;;
 FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\Pages\DeleteTestPage.xaml;;
 FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\Pages\EditProfilePage.xaml;;
@@ -10,6 +11,6 @@ FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\Pages\ProfilePage.xa
 FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\Pages\StatisticStudentPage.xaml;;
 FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\TeacherAccWindow.xaml;;
 FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Windows\ErrorWindow.xaml;;
-FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Windows\LoginAndRegisterWindow.xaml;;
 FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Windows\InfoWindow.xaml;;
+FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Windows\LoginAndRegisterWindow.xaml;;
 

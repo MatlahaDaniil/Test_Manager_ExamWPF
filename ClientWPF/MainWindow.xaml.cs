@@ -25,7 +25,7 @@ namespace ClientWPF
     {
         public MainWindow()
         {
-            InitializeComponent(); 
+            InitializeComponent();
         }
 
         private void Teacher_btn_Click(object sender, RoutedEventArgs e)
@@ -46,6 +46,10 @@ namespace ClientWPF
             this.Close();
         }
 
-        private void Window_MouseDown(object sender, MouseButtonEventArgs e) => DragMove();
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+                DragMove();
+        }
     }
 }
