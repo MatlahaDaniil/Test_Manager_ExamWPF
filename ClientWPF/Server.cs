@@ -98,49 +98,9 @@ namespace ClientWPF
                         InfoContainer.Schoolnum_Current_User = Info[4];
                     }
                     else if (builder.ToString().Contains("img:"))
-                    {
-                        int q = 0;
-                        int len = Convert.ToInt32(builder.ToString().Remove(0, 4));
-                        byte[] bytes = new byte[len];
+                        SendImage(builder.ToString(), ref remotePoint);
 
-                        int j = 0;
-
-                        while (q < bytes.Length)
-                        {
-                            byte[] data = null;
-
-                            do
-                            {
-                                data = receiver.Receive(ref remotePoint);
-                            } while (receiver.Available > 0);
-
-                            for (int i = 0; i < data.Length; i++, q++)
-                            {
-                                if (q >= bytes.Length) break;
-
-                                bytes[q] = data[i];
-                            }
-
-                            j += data.Length;
-                        }
-
-                        Application.Current.Dispatcher.Invoke(() =>
-                        {
-                            InfoContainer.ProfileIcon_Current_User = new BitmapImage();
-
-                            MemoryStream ms = new MemoryStream(bytes);
-                            //BitmapImage img = new BitmapImage();
-                            //img.StreamSource = ms;
-                            InfoContainer.ProfileIcon_Current_User.BeginInit();
-
-                            InfoContainer.ProfileIcon_Current_User.StreamSource = ms;
-
-                            InfoContainer.ProfileIcon_Current_User.EndInit();
-                        });
-                    }
                     builder.Clear();
-
-
                 }
             }
             catch (Exception ex)
@@ -153,15 +113,56 @@ namespace ClientWPF
             }
         }
 
+
+        private void SendImage(string message , ref IPEndPoint remotePoint)
+        {
+            int q = 0;
+            int len = Convert.ToInt32(message.ToString().Remove(0, 4));
+            byte[] bytes = new byte[len];
+
+            int j = 0;
+
+            while (q < bytes.Length)
+            {
+                byte[] data = null;
+
+                do
+                {
+                    data = receiver.Receive(ref remotePoint);
+                } while (receiver.Available > 0);
+
+                for (int i = 0; i < data.Length; i++, q++)
+                {
+                    if (q >= bytes.Length) break;
+
+                    bytes[q] = data[i];
+                }
+
+                j += data.Length;
+            }
+
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                InfoContainer.ProfileIcon_Current_User = new BitmapImage();
+
+                MemoryStream ms = new MemoryStream(bytes);
+
+                InfoContainer.ProfileIcon_Current_User.BeginInit();
+
+                InfoContainer.ProfileIcon_Current_User.StreamSource = ms;
+
+                InfoContainer.ProfileIcon_Current_User.EndInit();
+            });
+        }
+
+
         public async void SendMessage(string message)
         {
             if (client != null)
             {
-
                     bytesSend = Encoding.UTF8.GetBytes(message);
                     await client.SendAsync(bytesSend, bytesSend.Length,
                         new IPEndPoint(IPAddress.Parse("127.0.0.1"), Remoteport));
-
             }
         }
 
@@ -171,7 +172,6 @@ namespace ClientWPF
             {
                 await client.SendAsync(message, message.Length,
                     new IPEndPoint(IPAddress.Parse("127.0.0.1"), Remoteport));
-
             }
         }
     }

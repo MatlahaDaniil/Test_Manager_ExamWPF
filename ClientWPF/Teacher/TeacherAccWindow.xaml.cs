@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -22,7 +23,8 @@ namespace ClientWPF.Windows
     /// </summary>
     public partial class TeacherAccWindow : Window
     {
-        ProfilePage profile;
+        Timer timer;
+
         public TeacherAccWindow(BitmapImage image = null)
         {
             InitializeComponent();
@@ -33,7 +35,19 @@ namespace ClientWPF.Windows
                 AccPhoto_elips.Fill = imageBrush;
             }
 
+            timer = new Timer();
+            timer.Interval = 1000;
+            timer.Elapsed += Timer_Elapsed;
+            timer.Start();
+            
             InfoContainer.UpdateProfile += InfoContainer_UpdateProfile;
+
+            InfoContainer.MainTeacherWindow = this;
+        }
+
+        private void Timer_Elapsed(object? sender, ElapsedEventArgs e)
+        {
+            Dispatcher.Invoke(() => TimeBlock.Text = DateTime.Now.ToShortTimeString());
         }
 
         private void InfoContainer_UpdateProfile(string message)
@@ -43,11 +57,6 @@ namespace ClientWPF.Windows
                 ImageBrush imageBrush = new ImageBrush(InfoContainer.ProfileIcon_Current_User);
                 AccPhoto_elips.Fill = imageBrush;
             }
-        }
-
-        private void Acc_btn_Click(object sender, RoutedEventArgs e)
-        {
-            //Frame.Content = profile;
         }
 
         private void MoveWindow_MouseDown(object sender, MouseButtonEventArgs e)

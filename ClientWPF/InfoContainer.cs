@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ClientWPF.Student;
+using ClientWPF.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,15 @@ namespace ClientWPF
         public delegate void CheckUpdateProfile(string message);
         static public event CheckUpdateProfile UpdateProfile;
 
+        static public string Name_Test;
+        static public string NameSubject_Test;
+        static public string SchoolNum_Test;
+        static public List<string> ListQuestions_Test;
+        static public List<int> CountAnswers_Test;
+        static public List<byte[]> ListAnswers_Test;
+
+        static public TeacherAccWindow MainTeacherWindow = null;
+        static public StudentWindow MainStudentWindow = null;
 
         public InfoContainer()
         {

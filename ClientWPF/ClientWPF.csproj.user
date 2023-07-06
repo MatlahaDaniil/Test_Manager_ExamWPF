@@ -31,6 +31,12 @@
     <Compile Update="Teacher\Pages\StatisticStudentPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Teacher\TeacherWindows\AddQuestion.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Teacher\TeacherWindows\EditInfoForCreateTestWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Windows\ErrorWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -73,6 +79,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Teacher\Pages\StatisticStudentPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Teacher\TeacherWindows\AddQuestion.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Teacher\TeacherWindows\EditInfoForCreateTestWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\ErrorWindow.xaml">

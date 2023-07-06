@@ -93,71 +93,11 @@ namespace Server
                         SendMessage(answer);
                     }
                     else if (builder.ToString().Contains("img:"))
-                    {
-                        int q = 0;
-                        int len = Convert.ToInt32(builder.ToString().Remove(0, 4));
-                        byte[] bytes = new byte[len];
-
-                        int j = 0;
-                        while (q < bytes.Length)
-                        {
-                            byte[] data = null;
-
-                            do
-                            {
-                                data = receiver.Receive(ref remotePoint);
-                            } while (receiver.Available > 0);
-
-                            for (int i = 0; i < data.Length; i++, q++)
-                            {
-                                if (q >= bytes.Length) break;
-
-                                bytes[q] = data[i];
-                            }
-
-                            j += data.Length;
-                        }
-
-
-                        db.EditProfileIcon(User, Login, bytes);
-                    }
+                        SendImage(builder.ToString(), User, Login, remotePoint);
+                    
                     else if (builder.ToString().Contains("info:"))
-                    {
-                        string[] Params = builder.ToString().Split('|');
-                        SendMessage(db.GetStringInfo(Params[1], Params[2]));
-
-                        if (db.CheckProfileIcon(Params[1], Params[2]))
-                        {
-
-                            SendMessage(db.GetImageLength(Params[1], Params[2]));
-
-
-                            byte[] bytes = db.GetImage(Params[1], Params[2]);
-
-                            if (bytes.Length <= 65000)
-                            {
-                                SendMessage(bytes);
-                            }
-                            else
-                            {
-                                int q = 0;
-
-                                while (q < bytes.Length)
-                                {
-                                    byte[] peace = new byte[65000];
-
-                                    for (int j = 0; j < 65000; j++)
-                                    {
-                                        if (q >= bytes.Length) break;
-
-                                        peace[j] = bytes[q];
-                                        q++;
-                                    }
-                                    SendMessage(peace);
-                                }
-                            }
-                        }
-                    }
+                        SendInfo(builder.ToString().Split('|'));
+                    
                     builder.Clear();
                 }
 
@@ -172,11 +112,71 @@ namespace Server
             }
         }
 
+        void SendImage(string ReceiveMessage , string User , string Login , IPEndPoint remotePoint)
+        {
+            int q = 0;
+            int len = Convert.ToInt32(ReceiveMessage.ToString().Remove(0, 4));
+            byte[] bytes = new byte[len];
+
+            int j = 0;
+            while (q < bytes.Length)
+            {
+                byte[] data = null;
+
+                do
+                {
+                    data = receiver.Receive(ref remotePoint);
+                } while (receiver.Available > 0);
+
+                for (int i = 0; i < data.Length; i++, q++)
+                {
+                    if (q >= bytes.Length) break;
+
+                    bytes[q] = data[i];
+                }
+
+                j += data.Length;
+            }
+
+
+            db.EditProfileIcon(User, Login, bytes);
+        }
+
         void SendInfo(string[] Params)
         {
-            SendMessage(db.GetImageLength(Params[1], Params[2]));
+            SendMessage(db.GetStringInfo(Params[1], Params[2]));
 
-            byte[] bytes = db.GetImage(Params[1], Params[2]);
+            if (db.CheckProfileIcon(Params[1], Params[2]))
+            {
+
+                SendMessage(db.GetImageLength(Params[1], Params[2]));
+
+
+                byte[] bytes = db.GetImage(Params[1], Params[2]);
+
+                if (bytes.Length <= 65000)
+                {
+                    SendMessage(bytes);
+                }
+                else
+                {
+                    int q = 0;
+
+                    while (q < bytes.Length)
+                    {
+                        byte[] peace = new byte[65000];
+
+                        for (int j = 0; j < 65000; j++)
+                        {
+                            if (q >= bytes.Length) break;
+
+                            peace[j] = bytes[q];
+                            q++;
+                        }
+                        SendMessage(peace);
+                    }
+                }
+            }
         }
 
         public async void SendMessage(string message)

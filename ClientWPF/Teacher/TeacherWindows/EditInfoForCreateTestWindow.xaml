@@ -1,0 +1,95 @@
+﻿<Window x:Class="ClientWPF.Teacher.TeacherWindows.EditInfoForCreateTestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientWPF.Teacher.TeacherWindows"
+        mc:Ignorable="d"
+        Title="Edit Info" 
+        MaxHeight="450"
+        MaxWidth="400"
+        MinHeight="450"
+        MinWidth="400"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True"
+        MouseDown="Window_MouseDown"
+        WindowStartupLocation="CenterOwner">
+
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="Margin" Value="20,0,20,0"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        
+        <Border Background="#DFD9D9" 
+                CornerRadius="25"
+                BorderThickness="5" 
+                BorderBrush="Black">
+            <StackPanel>
+
+                <Image Source="/Resources/Icons/icon.png" 
+                       Width="100"
+                       Height="100"
+                       Margin="0,30,0,0"/>
+
+                <StackPanel Margin="0,30,0,0">
+                    <TextBox Text="                 Назва тесту"
+                             x:Name="NameTest_txb"
+                             GotFocus="NameTest_txb_GotFocus"
+                             LostFocus="NameTest_txb_LostFocus"/>
+                    <Border Background="Black" Height="3" Margin="20,0,20,30"/>
+
+                    <TextBox Text="           Шкільний предмет"
+                             x:Name="Subject_txb"
+                             GotFocus="Subject_txb_GotFocus"
+                             LostFocus="Subject_txb_LostFocus"/>
+                    <Border Background="Black" Height="3" Margin="20,0,20,30"/>
+
+                    <TextBox Text="                 Номер Класу"
+                             x:Name="NumClass_txb"
+                             GotFocus="NumClass_txb_GotFocus"
+                             LostFocus="NumClass_txb_LostFocus"/>
+                    <Border Background="Black" Height="3" Margin="20,0,20,30"/>
+                </StackPanel>
+
+                <Button x:Name="Save_btn" 
+                        Content="Зберегти"
+                        FontSize="20"
+                        Click="Save_btn_Click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="Transparent"
+                                    BorderBrush="Black"
+                                    BorderThickness="2"
+                                    CornerRadius="20"
+                                    Margin= "40,0,40,0"
+                                    Height="45"
+                                    Name="brd">
+
+                                <ContentPresenter Content="{TemplateBinding Content}"
+                                                  VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                            </Border>
+
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="brd" Property="Opacity" Value="1"/>
+                                    <Setter TargetName="brd" Property="Background" Value="DarkGray"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                
+            </StackPanel>
+        </Border>
+        
+    </Grid>
+</Window>

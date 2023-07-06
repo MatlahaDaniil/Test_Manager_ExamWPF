@@ -10,7 +10,9 @@ FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\Pages\ListStudentsPa
 FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\Pages\ProfilePage.xaml;;
 FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\Pages\StatisticStudentPage.xaml;;
 FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\TeacherAccWindow.xaml;;
+FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\TeacherWindows\EditInfoForCreateTestWindow.xaml;;
 FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Windows\ErrorWindow.xaml;;
 FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Windows\InfoWindow.xaml;;
 FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Windows\LoginAndRegisterWindow.xaml;;
+FC:\Users\Admin\source\repos\Test_Manager\ClientWPF\Teacher\TeacherWindows\AddQuestion.xaml;;
 

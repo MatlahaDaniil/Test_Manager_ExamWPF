@@ -20,6 +20,7 @@
     <None Remove="Resources\Icons\add.png" />
     <None Remove="Resources\Icons\arrow.png" />
     <None Remove="Resources\Icons\close.png" />
+    <None Remove="Resources\Icons\DarkEditIcon.png" />
     <None Remove="Resources\Icons\DarkIconAdd.png" />
     <None Remove="Resources\Icons\DarkIconUser.png" />
     <None Remove="Resources\Icons\delete.png" />
@@ -38,9 +39,13 @@
     <None Remove="Resources\Icons\test.png" />
     <None Remove="Resources\Icons\user.png" />
     <None Remove="Resources\Icons\userForButton.png" />
+    <None Remove="Resources\Icons\Whitechecked.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Icons\DarkEditIcon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Icons\history.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -115,6 +120,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Icons\userForButton.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icons\WhiteChecked.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

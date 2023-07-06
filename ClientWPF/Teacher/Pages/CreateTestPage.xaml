@@ -5,15 +5,133 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ClientWPF.Teacher.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="650" d:DesignWidth="800"
       Title="CreateTestPage">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
 
-    <Grid>
-        <TextBlock HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   Foreground="White"
-                   Background="Transparent"
-                   FontSize="50"
-                   Text="Create Test"/>
+    <Grid Background="Transparent">
+
+        <Grid.Resources>
+            <Style TargetType="TextBlock" x:Key="Names_txb">
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="Margin" Value="10,10,0,0"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+            </Style>
+
+            <Style TargetType="TextBlock" x:Key="Info_txb">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Margin" Value="5,10,0,0"/>
+            </Style>
+        </Grid.Resources>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="230"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Background="Transparent" Margin="20">
+
+            <Border Grid.ColumnSpan="2" 
+                    CornerRadius="15"
+                    Background="#DFD9D9"
+                    BorderBrush="Black"
+                    BorderThickness="3"/>
+
+            <UniformGrid Columns="2" Grid.Column="1">
+
+                <TextBlock Text="Назва тесту"
+                           Margin="30,10,0,0"
+                           Style="{StaticResource Names_txb}"/>
+
+                <TextBlock Text="Не вказано"
+                           x:Name="TestName_txb"
+                           Style="{StaticResource Info_txb}"/>
+
+                <TextBlock Text="Шкільний Предмет"
+                           Margin="30,10,0,0"
+                           Style="{StaticResource Names_txb}"/>
+
+                <TextBlock Text="Не вказано"
+                           x:Name="Subject_txb"
+                           Style="{StaticResource Info_txb}"/>
+
+                <TextBlock Text="Номер класу"
+                           Margin="30,10,0,0"
+                           Style="{StaticResource Names_txb}"/>
+
+                <TextBlock Text="Не вказано"
+                           x:Name="NumClass_txb"
+                           Style="{StaticResource Info_txb}"/>
+
+            </UniformGrid>
+            
+            <Button x:Name="AddTestInfo_btn"
+                        Height="40"
+                        Width="40"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Top"
+                        Margin="0,10,10,0"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        Click="AddTestInfo_btn_Click"
+                        Style="{StaticResource Style_btnWithImg}">
+
+                <Image Source="/Resources/Icons/DarkEditIcon.png"/>
+            </Button>
+
+        </Grid>
+
+        <Border Background="#2F3136"
+                CornerRadius="15"
+                BorderBrush="White"
+                BorderThickness="2"
+                Margin="20"
+                Grid.Row="1">
+
+            <Grid>
+
+                <Button x:Name="AddQuestion_btn"
+                        Height="40"
+                        Width="40"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Top"
+                        Margin="0,10,10,0"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        Click="AddQuestion_btn_Click"
+                        Style="{StaticResource Style_btnWithImg}">
+
+                    <Image Source="/Resources/Icons/add.png"/>
+                </Button>
+                
+                <StackPanel Grid.Row="1">
+                    <TextBlock Text="СПИСОК ЗАПИТАНЬ"
+                           FontSize="25"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           Background="Transparent"
+                           HorizontalAlignment="Center"
+                           Margin="0,10,0,0"/>
+
+                    <Border Background="White" 
+                        Height="5"
+                        CornerRadius="5"
+                        Margin="60,5,60,0"/>
+
+                    <ListView Margin="10"
+                          Height="230"
+                          Background="Transparent"
+                          BorderThickness="0"
+                          x:Name="ls_View"/>
+
+                </StackPanel>
+            </Grid>
+        </Border>
     </Grid>
 </Page>
